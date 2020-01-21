@@ -8,6 +8,7 @@ const LikeSection = props => {
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
+        {/* <button onClick={()=>}/> */}
         <i className="far fa-heart" />
       </div>
       <div className="like-section-wrapper">

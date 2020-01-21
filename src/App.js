@@ -7,20 +7,21 @@ Look at each file to see where you need to pass props or add code
 import React,{useState} from "react";
 import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
-// import dummydata
+// import dummy data
 import PostPage from './components/PostsContainer/PostsPage';
 import SearchBar from './components/SearchBar/SearchBarContainer';
 import dummyData from './dummy-data';
 
 const App = () => {
   // set up state for the dummy data and pass to your PostsPage
-  const[states,setStates]=useState(dummyData);
+  const[state, setState]=useState(dummyData);
+  console.log(dummyData);
 
   return (
     <div className="App">
-      {/* Add components here  and pass props where appropriate */}
       <SearchBar />
-      <PostPage states={states} setStates={setStates}/>
+      <PostPage/>
+      {/* <PostPage state={state} setState={setState}/> */}
     </div>
   );
 };
